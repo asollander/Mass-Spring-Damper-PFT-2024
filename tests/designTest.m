@@ -29,7 +29,7 @@ testCase.verifyError(@() simulateSystem('bunk'), ...
    'simulateSystem:InvalidDesign:ShouldBeStruct');
 end
 
-function testDampingTypes(testCase)
+function testDampingTypes(~)
 [~, ~] = simulateSystem(springMassDamperDesign("underdamped"));
 [~, ~] = simulateSystem(springMassDamperDesign("overdamped"));
 [~, ~] = simulateSystem(springMassDamperDesign("nicelydamped"));
